@@ -55,21 +55,21 @@ How to use:
 Add this function to your web-POS javascript file located in:
 addons_folder/point_of_sale/static/src/js/pos.js
 
->    function ledDisplay(line1,line2){  
->            try{  
->                if (window.XMLHttpRequest)  
->                  {// code for IE7+, Firefox, Chrome, Opera, Safari  
->                  xmlhttp=new XMLHttpRequest();  
->                  }  
->                else  
->                  {// code for IE6, IE5  
->                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");  
->                  }  
->                  xmlhttp.open("GET","http://localhost:8100/"+String(line1)+"___"+String(line2),false);  
->                  xmlhttp.send();  
->                }catch(err){  
->            }  
->    }  
+        function ledDisplay(line1,line2){  
+            try{  
+                if (window.XMLHttpRequest)  
+                  {// code for IE7+, Firefox, Chrome, Opera, Safari  
+                  xmlhttp=new XMLHttpRequest();  
+                  }  
+                else  
+                  {// code for IE6, IE5  
+                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");  
+                  }  
+                  xmlhttp.open("GET","http://localhost:8100/"+String(line1)+"___"+String(line2),false);  
+                  xmlhttp.send();  
+                }catch(err){  
+            }  
+        }  
 
 and use it however you want to show the progress in every sale
 for example this would generate something like in this README first image:
