@@ -18,16 +18,15 @@ http://www.gnu.org/licenses/gpl-3.0.html
 Install as a Windows Service:
 ----------------------------
 
-Download the latest .zip from 
-https://github.com/guerrerocarlos/OpenERP-ledDisplay/downloads
+ * Download the latest .zip from https://github.com/guerrerocarlos/OpenERP-ledDisplay/downloads
 
-Unzip the file
+ * Unzip the file
 
-Execute:
+ * Execute:
 
-    ServiceLauncher.exe -install
+        ServiceLauncher.exe -install
 
-Start it or/and configure to start automatically at Windows startup in the Windows Services Manager
+ * Start it or/and configure to start automatically at Windows startup in the Windows Services Manager
 
 
 Compiling Requirements:
@@ -53,7 +52,7 @@ How to use:
 -----------
 
 Add this function to your web-POS javascript file located in:
-addons_folder/point_of_sale/static/src/js/pos.js
+*addons_folder/point_of_sale/static/src/js/pos.js*
 
         function ledDisplay(line1,line2){  
             try{  
@@ -75,3 +74,9 @@ and use it however you want to show the progress in every sale
 for example this would generate something like in this README first image:
 
     ledDisplay("OpenERP 6.1 POS","LED DISPLAY DAEMON");
+
+Examples:
+---------
+
+![Example1](https://github.com/downloads/guerrerocarlos/OpenERP-ledDisplay/OpenERP-ledDisplay_ejemplo1.png)
+![Example2](https://github.com/downloads/guerrerocarlos/OpenERP-ledDisplay/OpenERP-ledDisplay_ejemplo2.png)
