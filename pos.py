@@ -10,7 +10,13 @@ import BaseHTTPServer
 
 class PosDisplay(object):
     def __init__(self):
-        self.ser = serial.Serial(0)
+        for each in range(0,9):
+            try:
+                print "Trying to connect to: COM"+str(each)
+                self.ser = serial.Serial(each)
+                break
+            except IOError:
+                print "Did not connect to connect to: COM"+str(each)
     
     def bridge(self, env, start_response):
         self.ser.write(" "*42)

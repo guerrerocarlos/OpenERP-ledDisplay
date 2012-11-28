@@ -4,15 +4,15 @@ OpenERP 6.1 POS - LED Display Daemon
 ![Selling machine ledDisplay](http://cloud.github.com/downloads/guerrerocarlos/OpenERP-ledDisplay/OpenERP-POS-ledDisplay.png)
 
 **Summary:** this is a WSGI web socket that allows OpenERP 6.1 web-POS to communicate with
-the selling machine ledDisplay (connected to a COM serial port), from javascript.
+the selling machine LED Display (connected to a COM serial port), from **javascript**.
 
-It allows the OpenERP web-POS to run within the browser but still be able to communicate with 
+Basically It allows the OpenERP web-POS to run within the browser but still be able to communicate with 
 the COM port and and local peripheral connected to the machine.
 
 Any request, improvement or bug can be reported at:
 https://github.com/guerrerocarlos/OpenERP-ledDisplay/issues
 
-*OpenERP-ledDisplay* is released under the *GPL v3* licence see file ``COPYING`` or visit
+It is released under the *GPL v3* licence see file ``COPYING`` or visit
 http://www.gnu.org/licenses/gpl-3.0.html
 
 Install as a Windows Service:
